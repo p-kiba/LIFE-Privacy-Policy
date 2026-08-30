@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#162f89">
   <meta name="description" content="iOSアプリ「LIFE」のプライバシーポリシー">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="life-icon.png" type="image/png">
   <title>LIFE Privacy Policy</title>
   <style>
     :root {
@@ -67,34 +67,12 @@
     }
 
     .mark {
-      position: relative;
       width: 40px;
       height: 40px;
-      overflow: hidden;
       border-radius: 12px;
       background: #fff;
       box-shadow: 0 9px 24px rgba(22, 47, 137, 0.14);
-    }
-
-    .mark::before,
-    .mark::after {
-      position: absolute;
-      width: 14px;
-      height: 34px;
-      top: 3px;
-      content: "";
-      border-radius: 4px;
-      transform: skew(-28deg);
-    }
-
-    .mark::before {
-      left: 10px;
-      background: var(--navy);
-    }
-
-    .mark::after {
-      left: 20px;
-      background: linear-gradient(180deg, var(--blue), var(--sky));
+      object-fit: cover;
     }
 
     .brand-name {
@@ -432,7 +410,7 @@
   <main class="page">
     <div class="topbar">
       <a class="brand" href="./" aria-label="LIFE Privacy Policy">
-        <span class="mark" aria-hidden="true"></span>
+        <img class="mark" src="life-icon.png" alt="">
         <span class="brand-name">LIFE</span>
       </a>
       <div class="language" aria-label="Language">
